@@ -8,3 +8,45 @@
         display: block;
     }
 }
+
+@media (min-width: 768px) {
+    .blue-circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ABOUT-US SECTION CSS */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .blue-rectangle {
+        width: 120px;
+        height: 60px;
+        left: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .triangle-pattern {
+        background-size: 8px 8px;
+        /* Smaller pattern size for smaller screens */
+        left: 120px;
+        /* Adjust position to fit smaller layouts */
+        top: 80px;
+        /* Move closer to accommodate smaller screen height */
+    }
+}
+
+@media (max-width: 480px) {
+    .triangle-pattern {
+        background-size: 6px 6px;
+        /* Even smaller for very small screens */
+        left: 50px;
+        /* Further adjust position for compact screens */
+        top: 110px;
+        /* Tighter top position */
+    }
+}

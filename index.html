@@ -22,7 +22,7 @@
 <body>
 
     <!-- BEGINING OF HEADER  -->
-    <header class="border-b w-100">
+    <header class="border-b w-100 sticky top-0 bg-white z-50">
         <div class="container mx-auto px-4 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="/" class="flex items-center space-x-2">
@@ -64,9 +64,11 @@
 
             <!-- Mobile Menu Button -->
             <button class="md:hidden" id="mobile-menu-button">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.16602 1.75H22.8327M2.16602 9.5H22.8327M13.791 17.25H22.8327" stroke="#1C2434"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
             </button>
         </div>
 
@@ -85,9 +87,270 @@
             </div>
         </div>
     </header>
-
     <!-- END OF HEADER  -->
 
+    <!-- BEGINING OF HERO SECTION  -->
+    <div class="relative min-h-auto w-full overflow-hidden hero-section border border-blue-500">
+        <!-- Decorative Elements -->
+        <div class="absolute top-8 right-1/4 w-6 h-6 text-blue-500">
+            <svg viewBox="0 0 24 24" fill="none" class="w-full h-full">
+                <path d="M12 4V20M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="absolute top-20 right-1/3 w-4 h-4 rounded-full border-2 border-blue-500"></div>
+
+        <!-- Main Content -->
+        <div class="container mx-auto px-4 py-12 md:py-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div class="max-w-xl space-y-6 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                        <span class="text-blue-500">Contract</span>
+                        <br class="hidden md:block" />
+                        Consultation is
+                        <br class="hidden md:block" />
+                        just a <span class="inline-flex items-center">'Hi'<span class="ml-2">👋</span></span>
+                        away.
+                    </h1>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Contact us now and reach out your doctor. Lorem ipsum has been the industry's standard dummy
+                        text ever.
+                    </p>
+                    <button
+                        class="bg-blue-500 text-white px-8 py-3 rounded-md hover:bg-blue-600 transition-colors duration-200 text-lg font-medium">
+                        Contact Now
+                    </button>
+                </div>
+
+                <!-- Image Section -->
+                <div class="relative h-[300px] md:h-[400px] lg:h-[500px]">
+                    <img src="./Image/BannerDoctor.png" alt="Doctor with stethoscope"
+                        class="absolute bottom-0 right-0 w-full h-full object-contain object-bottom" />
+                    <div class="absolute top-8 left-8 w-16 h-16  flex items-center justify-center">
+                        <img src="./Image/EyeDocHero.png" alt="Eye illustration" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Icon -->
+        <div
+            class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white h-20 w-10 flex items-center justify-center border border-blue-200 rounded-full">
+            <a href="#services" class=""><svg class="w-9 h-9 text-blue-500 animate-bounce" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg></a>
+        </div>
+    </div>
+    <!-- END OF HERO SECTION  -->
+
+    <!-- BEGINING OF SERVICE SECTION  -->
+    <div></div>
+    <!-- END OF SERVICE SECTION -->
+
+    <!-- BEGINING OF ABOUT US SECTION -->
+    <section class="py-16 px-4 md:py-24 overflow-hidden AboutUs min-h-auto border border-green-500">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="relative grid grid-cols-6 gap-4 md:gap-6">
+                    <div class="col-span-3 flex justify-center relative">
+                        <div
+                            class="feature-card bg-white rounded-xl shadow-md w-full max-w-[240px] h-[175px] overflow-hidden">
+                            <div class="icon-box h-[115px] flex items-center justify-center">
+                                <img src="./Image/professionalDocAboutusSec.png" alt="Professional Doctors"
+                                    class="w-16 h-16" />
+                            </div>
+                            <div class="label-box label-bg text-center flex items-center justify-center">
+                                <span
+                                    class="text-sm lg:text-xl md:text-xl text-wrap font-medium text-white">Professional
+                                    Doctors</span>
+                            </div>
+                        </div>
+                        <div class="blue-circle absolute "></div>
+                    </div>
+                    <div class="col-span-3 flex justify-center mt-6 sm:mt-12 relative">
+                        <div
+                            class="feature-card bg-white rounded-xl shadow-md w-full max-w-[240px] h-[175px] overflow-hidden">
+                            <div class="icon-box h-[115px] flex items-center justify-center">
+                                <img src="./Image/eyedroDocAboutusSec.png" alt="24/7 Patient Support"
+                                    class="w-16 h-16" />
+                            </div>
+                            <div class="label-box label-bg text-center flex items-center justify-center">
+                                <span class="text-sm lg:text-xl md:text-xl text-wrap font-medium text-white">24/7
+                                    Patient Support</span>
+                            </div>
+                        </div>
+                        <div class="blue-rectangle absolute "></div>
+                    </div>
+                    <div class="col-span-3 flex justify-center mt-6 relative">
+                        <div
+                            class="feature-card bg-white rounded-xl shadow-md w-full max-w-[240px] h-[175px] overflow-hidden ">
+                            <div class="icon-box h-[115px] flex items-center justify-center">
+                                <img src="./Image/personalcareDocAboutusSec.png" alt="Personal Care"
+                                    class="w-16 h-16" />
+                            </div>
+                            <div class="label-box label-bg text-center flex items-center justify-center">
+                                <span class="text-sm lg:text-xl md:text-xl font-medium text-white">Personal Care</span>
+                            </div>
+                        </div>
+                        <div class="triangle-pattern absolute w-32 h-32"><img src="./Image/triangle-pattern.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-5xl font-bold">
+                        <span class="text-blue-500">About</span> us
+                    </h2>
+                    <h3 class="text-gray-500 font-bold text-lg">
+                        A cataract is a clouding of the lens inside
+                    </h3>
+                    <div class="w-10 h-1 bg-black"></div>
+                    <h3 class="text-lg md:text-2xl font-bold text-gray-800">
+                        Lorem Ipsum has been the industry's standard
+                    </h3>
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed text-wrap">
+                        Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy
+                        text of the printing and tyLorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem
+                        Ipsum has been the industry's standarrem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's stad dummy text.
+                    </p>
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed text-wrap">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md transition-colors duration-200">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF ABOUT US SECTION -->
+
+    <!-- BEGINING OF ASSURITY SECTION -->
+    <section class="py-16 px-4 md:py-24 Asscurity min-h-auto border border-red-500">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    <span class="text-gray-600">Why you should </span>
+                    <span class="text-blue-500 underline-decoration">trust</span>
+                    <span class="text-gray-600">us?</span>
+                </h2>
+                <p class="text-gray-500">A cataract is a clouding of the lens inside</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Left Column -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl text-gray-600 font-bold">
+                        Lorem Ipsum has been the industry's standard
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply printing dummy text of
+                        the printing and tyLorem Ipsum is simply dummy text of the printing text and typesetting
+                        industry. Lorem ndarrem ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's stad dummy text.
+                    </p>
+
+                    <!-- Checkmark List -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="checkmark-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.754 0.97955L5.40635 7.52095L3.31895 5.55065C2.56749 4.84134 1.39855 4.84134 0.647092 5.55065C-0.104369 6.25996 -0.104369 7.36333 0.647092 8.07264L3.65294 10.9099C4.07042 11.3039 4.65489 11.5404 5.32285 11.5404C5.82383 11.5404 6.4083 11.3827 6.82577 11.0675C6.90927 11.0675 6.90927 10.9887 6.99277 10.9887L15.3423 3.58035C16.0938 2.87104 16.0938 1.76767 15.4258 1.05836C14.6744 0.270242 13.5054 0.270242 12.754 0.97955Z"
+                                        fill="#017CC7" />
+                                </svg>
+
+                            </div>
+                            <span class="text-gray-500">Lorem Ipsum has been the industry's standard dummy</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="checkmark-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.754 0.97955L5.40635 7.52095L3.31895 5.55065C2.56749 4.84134 1.39855 4.84134 0.647092 5.55065C-0.104369 6.25996 -0.104369 7.36333 0.647092 8.07264L3.65294 10.9099C4.07042 11.3039 4.65489 11.5404 5.32285 11.5404C5.82383 11.5404 6.4083 11.3827 6.82577 11.0675C6.90927 11.0675 6.90927 10.9887 6.99277 10.9887L15.3423 3.58035C16.0938 2.87104 16.0938 1.76767 15.4258 1.05836C14.6744 0.270242 13.5054 0.270242 12.754 0.97955Z"
+                                        fill="#017CC7" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-500">Lorem Ipsum has been the industry's standard dummy</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="checkmark-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.754 0.97955L5.40635 7.52095L3.31895 5.55065C2.56749 4.84134 1.39855 4.84134 0.647092 5.55065C-0.104369 6.25996 -0.104369 7.36333 0.647092 8.07264L3.65294 10.9099C4.07042 11.3039 4.65489 11.5404 5.32285 11.5404C5.82383 11.5404 6.4083 11.3827 6.82577 11.0675C6.90927 11.0675 6.90927 10.9887 6.99277 10.9887L15.3423 3.58035C16.0938 2.87104 16.0938 1.76767 15.4258 1.05836C14.6744 0.270242 13.5054 0.270242 12.754 0.97955Z"
+                                        fill="#017CC7" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-500">Lorem Ipsum has been the industry's standard dummy</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="bg-blue-500 text-white px-8 py-3 rounded-md hover:bg-blue-600 transition-colors duration-200">
+                        Book Appointment
+                    </button>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-6">
+                    <div class="flex justify-end">
+                        <div class="flex gap-2 items-center border-s-4 border-t-4 border-black curved-container">
+                            <div class="ms-2">
+                                <span class="text-blue-500 text-lg">Your</span>
+                                <span class="text-gray-500 text-lg">Personalised</span>
+                                <span class="text-blue-500 text-lg">Eye Care</span>
+                            </div>
+                            <div class=""><img src="./Image/Assurityhand.png" alt="" class="h-10 w-10"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <div class="flex gap-2 items-center border-s-4 border-t-4 border-black curved-container">
+                            <div class=""><img src="./Image/AssurityStetscope.png" alt=""></div>
+                            <div class="text-xl">
+                                <span class="text-blue-500">World class</span>
+                                <span class="text-gray-500">Technology</span>
+                                <span class="text-blue-500">& Technicians </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="curved-container flex items-center justify-between">
+                        <h4 class="text-xl">
+                            <span class="text-blue-500">World Class</span>
+                            <span class="text-gray-500">Experienced</span>
+                            <span class="text-blue-500">Doctors</span>
+                        </h4>
+                        <div class="doctor-avatars">
+                            <img src="" alt="Doctor 1" />
+                            <img src="" alt="Doctor 2" />
+                            <img src="" alt="Doctor 3" />
+                        </div>
+                    </div>
+
+                    <div class="curved-container">
+                        <h4 class="text-xl">
+                            <span class="text-gray-500">Affordable</span>
+                            <span class="text-blue-500">Price for all the patients with</span>
+                            <span class="text-gray-500">Benefits</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF ASSURITY SECTION -->
 
     <!-- SCRIPT -->
     <script src="./Js/main.js"></script>
