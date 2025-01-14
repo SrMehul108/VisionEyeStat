@@ -72,6 +72,37 @@ ul {
     background: rgba(241, 245, 249, 1);
 }
 
+/* SERVICE SECTION CSS  */
+.service-slider .slick-prev {
+    left: -40px;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider .slick-next {
+    right: -40px;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider .slick-prev:before,
+.service-slider .slick-next:before {
+    color: #0088CC;
+    font-size: 24px;
+}
+
+.service-slider .slick-slide {
+    padding: 0 15px;
+}
+
 /* MOBILE MENU CSS */
 
 .mobile-menu {
@@ -262,6 +293,7 @@ ul {
 
 .swiper-wrapper {
     display: flex;
+    gap: 1rem;
 }
 
 .swiper-slide {
@@ -299,8 +331,9 @@ ul {
     padding-bottom: 40px !important;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-next-our,
+.swiper-button-prev-our {
+    position: absolute;
     color: #0284c7;
     background: rgba(255, 255, 255, 0.9);
     width: 40px !important;
@@ -308,17 +341,17 @@ ul {
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, color 0.3s ease;
-    top: 412px;
+    top: 412px !important;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.swiper-button-next-our:hover,
+.swiper-button-prev-our:hover {
     background: #ffffff;
     color: #fff;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.swiper-button-next-our::after,
+.swiper-button-prev-our::after {
     font-size: 20px !important;
 }
 
