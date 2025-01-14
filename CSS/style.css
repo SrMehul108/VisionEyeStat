@@ -208,6 +208,7 @@ ul {
 .doctor-avatars {
     display: flex;
     margin-left: 1rem;
+    flex-wrap: wrap;
 }
 
 .doctor-avatars img {
@@ -217,3 +218,39 @@ ul {
     border: 2px solid white;
     margin-left: -1rem;
 }
+
+/* OUR TEAM SECTION CSS */
+.curved-arrow {
+    position: absolute;
+    left: -60px;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0284c7;
+    border-color: transparent transparent #0284c7 #0284c7;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 100%;
+}
+
+.curved-arrow::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #0284c7;
+    border-bottom: 2px solid #0284c7;
+    transform: rotate(-50deg);
+}
+
+.doctor-card {
+    transition: transform 0.2s ease-in-out;
+    background-color: #f1f5f9;
+}
+
+.doctor-card:hover {
+    background-color: #d9f1ff;
+    transform: translateY(-5px);
+}
+
