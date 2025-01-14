@@ -72,36 +72,6 @@ ul {
     background: rgba(241, 245, 249, 1);
 }
 
-/* SERVICE SECTION CSS  */
-.service-slider .slick-prev {
-    left: -40px;
-    z-index: 1;
-    background: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.service-slider .slick-next {
-    right: -40px;
-    z-index: 1;
-    background: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.service-slider .slick-prev:before,
-.service-slider .slick-next:before {
-    color: #0088CC;
-    font-size: 24px;
-}
-
-.service-slider .slick-slide {
-    padding: 0 15px;
-}
 
 /* MOBILE MENU CSS */
 
@@ -141,6 +111,38 @@ ul {
         transform: translateY(0);
     }
 }
+
+/* SERVICE SECTION CSS  */
+.service-slider .slick-prev {
+    left: -40px;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider .slick-next {
+    right: -40px;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider .slick-prev:before,
+.service-slider .slick-next:before {
+    color: #0088CC;
+    font-size: 24px;
+}
+
+.service-slider .slick-slide {
+    padding: 0 15px;
+}
+
 
 /* HERO-SECTION CSS */
 
@@ -617,14 +619,16 @@ footer {
 
 
 /* about page css */
-.bgpng{
+.bgpng {
     background-image: url('/Image/bgpng.png');
 }
+
 .Background {
     background-image: url('/Image/bgdoctor.png');
-    background-size: cover; /* Ensure the background covers the container */
-    background-position: center; 
-    position: relative; 
+    background-size: cover;
+    /* Ensure the background covers the container */
+    background-position: center;
+    position: relative;
 }
 
 .bg-pattern {
@@ -642,17 +646,21 @@ footer {
     overflow: hidden;
     transition: all 0.3s ease-out;
 }
+
 .faq-content.active {
     max-height: 1000px;
     opacity: 1;
     padding: 1rem 1.5rem;
 }
+
 .faq-icon {
     transition: transform 0.3s ease;
 }
+
 .faq-item.active .faq-icon {
     transform: rotate(180deg);
 }
+
 .faq-item.active {
     background-color: #fff;
 }
