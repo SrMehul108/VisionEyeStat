@@ -1,94 +1,140 @@
-<section class="py-16 px-4 md:py-24" id="services">
-    <div class="container mx-auto">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                <span class="text-blue-500">Services</span>
-                <span class="text-gray-500">We Provide</span>
-            </h2>
-            <p class="text-gray-400 text-lg">
-                A cataract is a clouding of the lens inside
-            </p>
-        </div>
-
-        <!-- Services Slider Container -->
-        <div class="relative">
-            <!-- Navigation Buttons -->
-            <button
-                class="nav-button absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 z-10 bg-white rounded-full p-2 shadow-lg"
-                aria-label="Previous service">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
-            <button
-                class="nav-button absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 z-10 bg-white rounded-full p-2 shadow-lg"
-                aria-label="Next service">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
-
-            <!-- Services Slider -->
-            <div class="service-slider overflow-x-auto flex gap-4 snap-x snap-mandatory">
-                <!-- Pediatric -->
-                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="icon-circle rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 4.5a2.5 2.5 0 0 0-2.5 2.5v2h5v-2a2.5 2.5 0 0 0-2.5-2.5zM3.5 9h17a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 19.5v-9A1.5 1.5 0 0 1 3.5 9z" />
-                        </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cataract Surgery Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <section class="container py-16 px-4 md:py-24 blogDetail min-h-auto">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <!-- Header Image -->
+                    <div class="rounded-xl overflow-hidden mb-6">
+                        <img src="./Image/eyeblogDetail.png" alt="Cataract Surgery Procedure" class="w-full h-[300px] object-cover">
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Pediatric</h3>
-                    <p class="text-gray-600">A cataract is a clouding of lens inside the eye cataract is the
-                        printing and ty Lorem cataract is a clouding ofa clouding of lens inside the eyecatar</p>
+
+                    <!-- Tag and Date -->
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract Surgery</span>
+                        <span class="text-gray-500 text-sm">September 1, 2022 | 3 Min Read</span>
+                    </div>
+
+                    <!-- Article Title -->
+                    <h1 class="text-3xl font-bold mb-6">The Best Cataract Surgery That Clears the Cloudy Vision</h1>
+
+                    <!-- Surgery Options Section -->
+                    <div class="prose max-w-none">
+                        <h2 class="text-xl font-semibold mb-4">The Best Cataract Surgery Options:</h2>
+
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold">1. Phacoemulsification</h3>
+                                <p class="text-gray-600">
+                                    Phacoemulsification, often referred to as phaco surgery, is the most common and advanced
+                                    cataract surgery technique. Using ultrasound energy breaks up the cloudy lens and then gently sections it out of
+                                    the eye. Surgeons implant an artificial intraocular lens (IOL) in place of the removed
+                                    cataract to provide clear vision.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold">2. Femtosecond Laser-Assisted Cataract Surgery (FLACS)</h3>
+                                <p class="text-gray-600">
+                                    FLACS is a cutting-edge cataract surgery technique that uses a femtosecond laser to create precise
+                                    incisions in the eye, softening the cataract and making its removal easier. This technology allows for
+                                    greater accuracy and customization in cataract surgery. FLACS offers benefits such as reduced risk of
+                                    complications and faster healing.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold">3. Lifestyle Lenses</h3>
+                                <p class="text-gray-600">
+                                    During cataract surgery, patients have the opportunity to choose an IOL that can not only correct
+                                    cataracts but also address other vision issues like nearsightedness, farsightedness, and astigmatism.
+                                    Surgeons often refer to these specialized IOLs as "lifestyle lenses," and they can reduce or eliminate the
+                                    need for glasses or contact lenses after surgery.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold">4. Monovision Correction</h3>
+                                <p class="text-gray-600">
+                                    Monovision correction is an option for individuals who want to reduce their dependence on glasses for
+                                    both distance and near vision. This technique involves implanting different IOLs in each eye, one
+                                    optimized for distance and the other for near vision. While it may take some time to adjust to this
+                                    approach, many patients find it a convenient solution for their vision needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Oculoplasty -->
-                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="icon-circle rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Oculoplasty</h3>
-                    <p class="text-gray-600">A cataract is a clouding of lens inside the eye cataract is the
-                        printing and ty Lorem cataract is a clouding ofa clouding of lens inside the eyecatar</p>
-                </div>
+                <!-- Sidebar - Related Blogs -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-xl font-semibold mb-6">Related Blogs</h2>
+                    <div class="space-y-6">
+                        <!-- Related Blog 1 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                            <img src="/path/to/image2.jpg" alt="Eye Surgery" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs">Cataract Surgery</span>
+                                <h3 class="font-semibold mt-2 mb-2">Eye Floaters: Causes, Symptoms And Treatment</h3>
+                                <div class="flex justify-between items-center text-sm text-gray-500">
+                                    <span>September 1, 2022 | 2 min read</span>
+                                    <a href="#" class="text-blue-600 hover:text-blue-700 inline-flex items-center">
+                                        Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- Glaucoma -->
-                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="icon-circle rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Glaucoma</h3>
-                    <p class="text-gray-600">A cataract is a clouding of lens inside the eye cataract is the
-                        printing and ty Lorem cataract is a clouding ofa clouding of lens inside the eyecatar</p>
-                </div>
+                        <!-- Related Blog 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                            <img src="/path/to/image3.jpg" alt="Eye Care Professional" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs">Personal Care</span>
+                                <h3 class="font-semibold mt-2 mb-2">Eye Care for Professionals: Navigating Digital Challenges</h3>
+                                <div class="flex justify-between items-center text-sm text-gray-500">
+                                    <span>September 1, 2022 | 3 min read</span>
+                                    <a href="#" class="text-blue-600 hover:text-blue-700 inline-flex items-center">
+                                        Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- Retina -->
-                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="icon-circle rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15.91 11.672a4 4 0 010 .656M12 12h.01M8.09 11.672a4 4 0 010 .656" />
-                        </svg>
+                        <!-- Related Blog 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                            <img src="/path/to/image4.jpg" alt="Eye close-up" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs">Cataract Surgery</span>
+                                <h3 class="font-semibold mt-2 mb-2">Can I Change The Colour Of My Lenses? Is It Safe?</h3>
+                                <div class="flex justify-between items-center text-sm text-gray-500">
+                                    <span>September 1, 2022 | 3 min read</span>
+                                    <a href="#" class="text-blue-600 hover:text-blue-700 inline-flex items-center">
+                                        Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Retina</h3>
-                    <p class="text-gray-600">A cataract is a clouding of lens inside the eye cataract is the
-                        printing and ty Lorem cataract is a clouding ofa clouding of lens inside the eyecatar</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</body>
+</html>
