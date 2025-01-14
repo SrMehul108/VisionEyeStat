@@ -217,3 +217,19 @@ ul {
     border: 2px solid white;
     margin-left: -1rem;
 }
+
+
+/* about page css */
+
+.Background {
+    background-image: url('/Image/bgdoctor.png');
+    background-size: cover; /* Ensure the background covers the container */
+    background-position: center; 
+    position: relative; 
+}
+
+.bg-pattern {
+    background-image: url('../Image/About.png');
+    background-size: cover;
+    background-position: center;
+}

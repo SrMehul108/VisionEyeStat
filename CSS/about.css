@@ -1,0 +1,82 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+a {
+        text-decoration: none;
+}
+
+ul {
+        list-style: none;
+}
+
+.container {
+        margin: 0 auto;
+}
+
+/* HEADER CSS */
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 0.375rem;
+        top: 10px;
+        z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+        display: block;
+}
+
+.nav-link {
+        position: relative;
+        padding-bottom: 4px;
+        transition: color 0.3s ease;
+}
+
+.nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #0ea5e9;
+        transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+        color: #0ea5e9;
+}
+
+.nav-link:hover::after {
+        width: 100%;
+}
+
+.nav-link.active {
+        color: #0ea5e9;
+}
+
+.nav-link.active::after {
+        width: 100%;
+}
+
+/* about page css */
+
+.Background {
+        background-image: url('/Image/bgdoctor.png');
+        background-size: cover; /* Ensure the background covers the container */
+        background-position: center; 
+        position: relative; 
+    }
+    
+.bg-pattern {
+        background-image: url('../Image/About.png');
+        background-size: cover;
+        background-position: center;
+}

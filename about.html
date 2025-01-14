@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS  -->
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/responsive.css">
+        <!-- FONT CDN  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+                rel="stylesheet" />
+
+        <title>About Us</title>
+</head>
+
+<body>
+        <!-- BEGINING OF HEADER  -->
+        <header class="border-b w-100 sticky top-0 bg-white z-50">
+                <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+                        <!-- Logo -->
+                        <a href="/" class="flex items-center space-x-2">
+                                <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-10 w-auto">
+                        </a>
+
+                        <!-- Desktop Navigation -->
+                        <nav class="hidden md:block">
+                                <ul class="flex items-center space-x-8">
+                                        <li><a href="./index.html" class="nav-link  text-sm font-medium">Home</a>
+                                        </li>
+                                        <li><a href="./about.html" class="nav-link active text-sm font-medium">About
+                                                        Us</a>
+                                        </li>
+                                        <li class="dropdown relative">
+                                                <a href="#" class="nav-link text-sm font-medium flex items-center">
+                                                        Services
+                                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor"
+                                                                viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M19 9l-7 7-7-7" />
+                                                        </svg>
+                                                </a>
+                                                <div class="dropdown-content mt-2 py-2 border border-gray-200">
+                                                        <a href="/services/eye-examination"
+                                                                class="block px-4 py-2 text-sm hover:bg-gray-100">Eye
+                                                                Examination</a>
+                                                        <a href="/services/contact-lens"
+                                                                class="block px-4 py-2 text-sm hover:bg-gray-100">Contact
+                                                                Lens Fitting</a>
+                                                        <a href="/services/vision-therapy"
+                                                                class="block px-4 py-2 text-sm hover:bg-gray-100">Vision
+                                                                Therapy</a>
+                                                </div>
+                                        </li>
+                                        <li><a href="/blogs" class="nav-link text-sm font-medium">Blogs</a></li>
+                                        <li><a href="/contact" class="nav-link text-sm font-medium">Contact Us</a></li>
+                                </ul>
+                        </nav>
+
+                        <!-- Book Appointment Button -->
+                        <a href="/appointment"
+                                class="bg-blue-500 hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
+                                Book Appointment
+                        </a>
+
+                        <!-- Mobile Menu Button -->
+                        <button class="md:hidden" id="mobile-menu-button">
+                                <svg width="25" height="19" viewBox="0 0 25 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.16602 1.75H22.8327M2.16602 9.5H22.8327M13.791 17.25H22.8327"
+                                                stroke="#1C2434" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                </svg>
+
+                        </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu md:hidden" id="mobile-menu">
+                        <div class="px-4 py-2 space-y-1">
+                                <a href="/" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Home</a>
+                                <a href="/about" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">About
+                                        Us</a>
+                                <a href="/services"
+                                        class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
+                                <a href="/blogs"
+                                        class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Blogs</a>
+                                <a href="/contact"
+                                        class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact Us</a>
+                                <a href="/appointment"
+                                        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                                        Book Appointment
+                                </a>
+                        </div>
+                </div>
+        </header>
+        <!-- END OF HEADER  -->
+        <div class="min-h-[300px] bg-pattern relative">
+                <div class="container mx-auto px-4 py-16 md:py-24">
+                        <div class="max-w-4xl mx-auto text-center">
+                                <!-- Label -->
+                                <div class="w-full  mb-4   flex justify-center items-center text-white text-lg">
+                                        <div class="text-sm text-white font-medium bg-blue-500  px-4 py-1 rounded-full">
+                                                Know who we are</div>
+                                </div>
+
+                                <!-- Heading Container -->
+                                <div class="relative inline-flex items-center justify-center">
+                                        <!-- Left Plus -->
+                                        <span
+                                                class="absolute left-7 -top-2 text-blue-500 text-3xl font-semibold">+</span>
+
+                                        <!-- Main Heading -->
+                                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 px-12">
+                                                About Us
+                                        </h1>
+
+                                        <!-- Right Plus -->
+                                        <span
+                                                class="absolute right-6 -bottom-2 text-blue-500 text-3xl font-semibold">+</span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- section -->
+        <main class="container mx-auto px-4 py-12 md:py-24">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                        <!-- Image Section with Decorative Elements -->
+                        <div class="relative w-full md:w-1/2">
+                                <img src="../Image/aboutSection1.png" alt="Doctor examining patient"
+                                        class="rounded-lg  relative z-10" />
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="w-full md:w-1/2 space-y-6">
+                                <div class="space-y-2">
+                                        <h1 class="text-4xl md:text-5xl font-bold">
+                                                <span class="text-blue-500">Welcome</span> to the Hospital
+                                        </h1>
+                                        <p class="text-gray-600">
+                                                Lorem Ipsum is simply dummy text of the printing and typLorem
+                                        </p>
+                                        <div class=" w-6 h-0 border border-black"></div>
+                                </div>
+                                <div class="space-y-4">
+                                        <h2 class="text-xl font-semibold text-gray-800">
+                                                Lorem Ipsum has been the industry's standard
+                                        </h2>
+                                        <p class="text-gray-600">
+                                                Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply
+                                                dummy text of the printing and therefore typesetting industry. Lorem
+                                                Ipsum has been the industry's standardom ipsum is simply dummy text of
+                                                the printing and typesetting industry. Lorem Ipsum has been the reality
+                                                quick industry's ated dummy text. Lorem Ipsum is simply dummy text of
+                                                the printing and typesetting industry. Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s,
+                                        </p>
+                                        <p class="text-gray-600">
+                                                When an unknown printer took a galley of type and scrambled it to make a
+                                                type.It has as a specimen book. It has survived not only five centuries,
+                                                but also the leap into electronic typesetting, remaining essentially
+                                                unchanged.
+                                        </p>
+                                </div>
+
+                                <button
+                                        class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                                        Our Services
+                                </button>
+                        </div>
+                </div>
+        </main>
+        <!-- our work process -->
+        <div class="bg-gray-50">
+                <section class="container mx-auto px-4 py-16 ">
+                        <!-- Header -->
+                        <div class="text-center mb-4">
+                                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                                        Our <span class="text-blue-500">Work</span> Process
+                                </h2>
+                                <p class="text-gray-600">
+                                        Lorem Ipsum is simply dummy text of the printing and typLorem
+                                </p>
+                                <div class="w-10 h-1 bg-black mx-auto mt-4"></div>
+                        </div>
+
+                        <!-- Process Cards -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                                <!-- Take Appointment -->
+                                <div class="text-center p-6">
+                                        <div class="w-16 h-16 mx-auto mb-6">
+                                                <img src="../Image/f1.png" alt="">
+                                        </div>
+                                        <h3 class="text-xl font-semibold mb-4 flex items-center justify-center">
+                                                <span class="text-blue-500 mr-2">+</span>
+                                                Take Appointment
+                                        </h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                                A cataract is a clouding of lens inside the eye cataract is the printing
+                                                and ty Lorem cataract is a clouding ofa clouding of lens inside the
+                                                eyecatar
+                                        </p>
+                                </div>
+
+                                <!-- Eye Check Up -->
+                                <div class="text-center p-6">
+                                        <div class="w-16 h-16 mx-auto mb-6">
+                                                <img src="../Image/f2.png" alt="">
+                                        </div>
+                                        <h3 class="text-xl font-semibold mb-4 flex items-center justify-center">
+                                                <span class="text-blue-500 mr-2">+</span>
+                                                Eye Check Up
+                                        </h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                                A cataract is a clouding of lens inside the eye cataract is the printing
+                                                and ty Lorem cataract is a clouding ofa clouding of lens inside the
+                                                eyecatar
+                                        </p>
+                                </div>
+
+                                <!-- Start Treatments -->
+                                <div class="text-center p-6">
+                                        <div class="w-16 h-16 mx-auto mb-6">
+                                                <img src="../Image/f3.png" alt="">
+                                        </div>
+                                        <h3 class="text-xl font-semibold mb-4 flex items-center justify-center">
+                                                <span class="text-blue-500 mr-2">+</span>
+                                                Start Treatments
+                                        </h3>
+                                        <p class="text-gray-600 leading-relaxed">
+                                                A cataract is a clouding of lens inside the eye cataract is the printing
+                                                and ty Lorem cataract is a clouding ofa clouding of lens inside the
+                                                eyecatar
+                                        </p>
+                                </div>
+                        </div>
+                </section>
+        </div>
+        <!-- slider -->
+
+        <!-- our team of Doctor -->
+        <section class="container mx-auto px-4 py-16">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                        <!-- Left Content -->
+                        <div class="w-full lg:w-1/2 space-y-6">
+                                <h2 class="text-3xl md:text-4xl font-bold">
+                                        Our Medical <span class="text-blue-500">Approach</span>
+                                </h2>
+                                <p class="text-gray-600">
+                                        Lorem Ipsum is simply dummy text of the printing and typLorem
+                                </p>
+                                <div class="w-10 h-1 bg-black mx-auto mt-4"></div>
+                                <h3 class="text-xl font-semibold text-gray-800">
+                                        Lorem Ipsum has been the industry's standard
+                                </h3>
+
+                                <div class="space-y-4">
+                                        <p class="font-medium">Our support services include:</p>
+                                        <p class="text-gray-600">
+                                                When an unknown printer took a galley of type and scrambled it to make a
+                                                type.It has as a specimen book. It has survived not only five centuries,
+                                                but also the leap into electronic typesetting, remaining essentially
+                                                When an unknown printer took a galley of type and scrambled it to make a
+                                                type.It has as a specimen book. It has survived not only five centuries,
+                                                but also the leap into electronic typesetting, remaining essentially
+                                                unchanged.
+                                        </p>
+                                </div>
+
+                                <div class="space-y-4">
+                                        <p class="font-medium">Professional Experience:</p>
+                                        <p class="text-gray-600">
+                                                When an unknown printer took a galley of type and scrambled it to make a
+                                                type.It has as a specimen book. It has survived not only five centuries,
+                                                but also the leap into electronic typesetting, remaining essentially
+                                                unchanged.When an unknown printer.
+                                        </p>
+                                </div>
+
+                                <button
+                                        class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                                        Our Services
+                                </button>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="w-full lg:w-1/2 relative">
+                                <!-- Happy Patients Card -->
+                                <div
+                                        class="absolute left-0 top-8 bg-white rounded-lg shadow-lg p-3 z-10 hidden sm:block">
+                                        <p class="text-sm font-medium mb-2">Happy Patients</p>
+                                        <div class="flex items-center gap-1">
+                                                <div class="flex -space-x-2">
+                                                        <img src="../Image/h1.png" alt="Patient 1"
+                                                                class="w-8 h-8 rounded-full border-2 border-white" />
+                                                        <img src="../Image/h2.png" alt="Patient 2"
+                                                                class="w-8 h-8 rounded-full border-2 border-white" />
+                                                        <img src="../Image/h3.png" alt="Patient 3"
+                                                                class="w-8 h-8 rounded-full border-2 border-white" />
+                                                        <img src="../Image/h4.png" alt="Patient 3"
+                                                                class="w-8 h-8 rounded-full border-2 border-white bg-black cover" />
+                                                </div>
+
+                                        </div>
+                                </div>
+
+                                <!-- Main Image with Background Shape -->
+                                <div class="relative overflow-hidden Background">
+                                        <div class="absolute inset-0  transform translate-x-4 translate-y-9">
+                                        </div>
+                                        <img src="../Image/aboutdoctor.png" alt="Doctor holding eye test chart"
+                                                class="relative z-[1] -top-1 w-full overflow-hidden  " />
+                                </div>
+
+                        </div>
+                </div>
+        </section>
+        <!-- footer -->
+        <footer class="bg-gray-800 py-8 px-8 font-[sans-serif] tracking-wide mt-16">
+                <div class="relative max-w-screen-xl mx-auto">
+        <div class="bg-white gap-3 rounded-md flex flex-wrap items-center justify-between sm:px-8 max-sm:px-4 py-4 absolute top-[-150px] w-full right-[0%] sm:top-[-66px] sm:right-[16%] sm:w-[75%]">
+                   <div class="w-[75%]">
+                        <h6 class="text-blue-500 sm:text-xl max-sm:text-base ">Want to make appointment easily?</h6>
+                        <h6 class="text-gray-500  max-sm:text-base ">Lorem ipsum dolor sit amet consectetur Voluptate, asperiores.</h6>
+                    </div>
+                    
+                    <button type='button'
+                      class="px-4 py-2 text-sm rounded-md text-white gap-2 bg-[#017CC7]">Book Appointment</button>
+                  </div>
+          
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pt-10">
+                        <div>
+                                <h4 class="text-lg font-semibold mb-6 text-gray-200">About Us</h4>
+                                <ul class=" flex-wrap gap-4">
+                                  <li>
+                                        <a href="/" class="flex items-center space-x-2">
+                                                <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-10 w-auto">
+                                        </a>
+                                  </li>
+                                  <li class="text-[#FFFFFF] text-sm">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, hic totam at nobis assumenda 
+                                  </li>
+                                </ul>
+                              </div>
+          
+                    <div>
+                      <h4 class="text-lg font-semibold mb-6 text-[#FFFFFF]">Pages</h4>
+                      <ul class="space-y-4">
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-gray-300 text-base">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-gray-300 text-base">Services</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-gray-300 text-base">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-gray-300 text-base">Blogs</a></li>
+                      </ul>
+                    </div>
+          
+                    <div>
+                      <h4 class="text-lg font-semibold mb-6 text-[#FFFFFF]">Parle Point Branch</h4>
+                      <ul class="space-y-4">
+                        <li class="text-gray-400 text-base">Time : 9:30 AM to 6:00 PM</li>
+                        <li class="text-gray-400 text-base">Get the Direction</li>
+                       
+                      </ul>
+                    </div>
+          
+                    <div>
+                      <h4 class="text-lg font-semibold mb-6 text-[#FFFFFF]">Parvat Patiya Branch</h4>
+                      <ul class="space-y-4">
+                        <li class="text-gray-400 text-base">Time : 9:30 AM to 6:00 PM</li>
+                        <li class="text-gray-400 text-base">Get the Direction</li>
+                       
+                      </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6 text-[#FFFFFF]">Contact Us</h4>
+                        <ul class="flex flex-wrap gap-4">
+                          <li class="border border-gray-200 rounded-md py-2 px-4 text-black hover:text-gray-800 bg-white"> 
+                            +919909905215
+                          </li>
+                          <li class="text-gray-400">
+                            <a href='javascript:void(0)'>
+                                info@visioneyehospital.net
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+          
+                <div class="bg-gray-900 py-4 px-4 -mx-8  mt-10  ">
+                        <div class="container justify-between items-center flex ">
+                                <p class='text-gray-400 text-base'>Copyright © 2017 Vision Eye Hospital. Developed and Maintained by Sanskruti Technologies</p>
+                                <div>
+                                      <ul class="flex flex-wrap gap-4">
+                                              <li><img src="./Image/facebook.png" alt=""></li>
+                                              <li><img src="./Image/twitter.png" alt=""></li>
+                                              <li><img src="./Image/instragram.png" alt=""></li>
+                                              <li><img src="./Image/Vector.png" alt=""></li>
+                                      </ul>
+                                </div>
+                        </div>
+                  
+                </div>
+              </footer>
+        <!-- SCRIPT -->
+        <script src="./Js/main.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+                tailwind.config = {
+                        theme: {
+                                extend: {
+                                        container: {
+                                                padding: {
+                                                        DEFAULT: "1rem",
+                                                        sm: "2rem",
+                                                        lg: "4rem",
+                                                        xl: "5rem",
+                                                        "2xl": "6rem",
+                                                },
+                                        },
+                                        fontFamily: {
+                                                sans: ['"Josefin Sans"', "sans-serif"],
+                                                josefin: ['"Josefin Sans"', "sans-serif"],
+                                                antonio: ['"Antonio Fischer"', "cursive"],
+                                                italiana: ['"Italiana"', "serif"],
+                                        },
+                                        backgroundImage: {
+                                                "gradient-border":
+                                                        "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                                        },
+                                },
+                        },
+                };
+        </script>
+</body>
+
+</html>
