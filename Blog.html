@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- FONT CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <!-- SLIDER CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- BEGINING OF HEADER  -->
+    <header class="border-b w-100 sticky top-0 bg-white z-50">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center space-x-2">
+                <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8">
+                    <li><a href="./index.html" class="nav-link  text-sm font-medium">Home</a></li>
+                    <li><a href="/about" class="nav-link text-sm font-medium">About Us</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" class="nav-link text-sm font-medium flex items-center p-0">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content mt-2 py-2 border border-gray-200">
+                            <a href="/services/eye-examination" class="block px-4 py-2 text-sm hover:bg-gray-100">Eye
+                                Examination</a>
+                            <a href="/services/contact-lens" class="block px-4 py-2 text-sm hover:bg-gray-100">Contact
+                                Lens Fitting</a>
+                            <a href="/services/vision-therapy" class="block px-4 py-2 text-sm hover:bg-gray-100">Vision
+                                Therapy</a>
+                        </div>
+                    </li>
+                    <li><a href="./Blog.html" class="nav-link active text-sm font-medium">Blogs</a></li>
+                    <li><a href="/contact" class="nav-link text-sm font-medium">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Book Appointment Button -->
+            <a href="/appointment"
+                class="bg-blue-500 hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.16602 1.75H22.8327M2.16602 9.5H22.8327M13.791 17.25H22.8327" stroke="#1C2434"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-1">
+                <a href="./index.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Home</a>
+                <a href="/about" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">About Us</a>
+                <a href="/services" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
+                <a href="./Blog.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Blogs</a>
+                <a href="/contact" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact Us</a>
+                <a href="/appointment"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+
+    <!-- SCRIPT -->
+    <script src="./Js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
