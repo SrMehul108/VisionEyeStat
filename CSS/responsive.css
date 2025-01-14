@@ -32,21 +32,61 @@
 @media (max-width: 768px) {
     .triangle-pattern {
         background-size: 8px 8px;
-        /* Smaller pattern size for smaller screens */
         left: 120px;
-        /* Adjust position to fit smaller layouts */
         top: 80px;
-        /* Move closer to accommodate smaller screen height */
     }
 }
 
 @media (max-width: 480px) {
     .triangle-pattern {
         background-size: 6px 6px;
-        /* Even smaller for very small screens */
         left: 50px;
-        /* Further adjust position for compact screens */
         top: 110px;
-        /* Tighter top position */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    .toggle-button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .arrow {
+        width: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 640px) {
+    .blog-slider {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .blog-slider {
+        padding: 15px 40px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .blog-slider {
+        padding: 20px 60px;
     }
 }

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- FONT CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <!-- SLIDER CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- BEGINING OF HEADER  -->
+    <header class="border-b w-100 sticky top-0 bg-white z-50">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center space-x-2">
+                <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8">
+                    <li><a href="./index.html" class="nav-link  text-sm font-medium">Home</a></li>
+                    <li><a href="/about" class="nav-link text-sm font-medium">About Us</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" class="nav-link text-sm font-medium flex items-center p-0">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content mt-2 py-2 border border-gray-200">
+                            <a href="/services/eye-examination" class="block px-4 py-2 text-sm hover:bg-gray-100">Eye
+                                Examination</a>
+                            <a href="/services/contact-lens" class="block px-4 py-2 text-sm hover:bg-gray-100">Contact
+                                Lens Fitting</a>
+                            <a href="/services/vision-therapy" class="block px-4 py-2 text-sm hover:bg-gray-100">Vision
+                                Therapy</a>
+                        </div>
+                    </li>
+                    <li><a href="./Blog.html" class="nav-link active text-sm font-medium">Blogs</a></li>
+                    <li><a href="/contact" class="nav-link text-sm font-medium">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Book Appointment Button -->
+            <a href="/appointment"
+                class="bg-blue-500 hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.16602 1.75H22.8327M2.16602 9.5H22.8327M13.791 17.25H22.8327" stroke="#1C2434"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-1">
+                <a href="./index.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Home</a>
+                <a href="/about" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">About Us</a>
+                <a href="/services" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
+                <a href="./Blog.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Blogs</a>
+                <a href="/contact" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact Us</a>
+                <a href="/appointment"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+
+    <!-- BEGINING OF HERO-SECTION  -->
+    <section>
+        <div class="diagonal-section background-pattern min-h-[340px] bg-gray-50 relative">
+            <div class="container mx-auto px-4 py-16 relative z-10">
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <span class="bg-[#0088CC] text-white px-6 py-2 rounded-full text-sm font-semibold">
+                        Our Blogs
+                    </span>
+                    <div class="relative">
+                        <span class="text-[#0088CC] absolute -left-8 -top-4 text-4xl font-bold">+</span>
+                        <h1 class="text-6xl font-bold text-gray-900">Blog</h1>
+                        <span class="text-[#0088CC] absolute -right-8 -bottom-4 text-4xl font-bold">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF HERO-SECTION  -->
+
+    <!-- BEGINING OF BLOG-SECTION  -->
+    <section class="container">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 1%3C/text%3E%3C/svg%3E"
+                        alt="Eye close-up" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Can change the Colors of the eyes ever in your life or
+                            not?</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 2%3C/text%3E%3C/svg%3E"
+                        alt="Medical procedure" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">The Best Cataract Surgery That Clears the Cloudy Vision
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 3%3C/text%3E%3C/svg%3E"
+                        alt="Eye close-up" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Can change the Colors of the eyes ever in your life or
+                            not?</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 4%3C/text%3E%3C/svg%3E"
+                        alt="Person with computer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Eye Care for Professionals: Navigating Digital Challenges
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 5%3C/text%3E%3C/svg%3E"
+                        alt="Person with eye test" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Eye Care for Professionals: Navigating Digital Challenges
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 6%3C/text%3E%3C/svg%3E"
+                        alt="Medical procedure" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">The Best Cataract Surgery That Clears the Cloudy Vision
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 7 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 7%3C/text%3E%3C/svg%3E"
+                        alt="Medical procedure" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">The Best Cataract Surgery That Clears the Cloudy Vision
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 8 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 8%3C/text%3E%3C/svg%3E"
+                        alt="Person with medical check" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Can change the Colors of the eyes ever in your life or
+                            not?</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 9 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23999'%3EImage 9%3C/text%3E%3C/svg%3E"
+                        alt="Eye close-up" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Cataract
+                                Surgery</span>
+                            <span class="text-gray-500 text-sm">September 1, 2022 | 3min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Can change the Colors of the eyes ever in your life or
+                            not?</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
+                            vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
+                            treatments that can restore your [...]</p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center space-x-2 mt-12">
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white">1</a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-50">2</a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-50">3</a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END OF BLOG-SECTION  -->
+
+    <!-- SCRIPT -->
+    <script src="./Js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
