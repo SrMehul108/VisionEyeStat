@@ -246,15 +246,15 @@ ul {
 
 .doctor-card {
     transition: transform 0.2s ease-in-out;
-    background-color: #f1f5f9;
+    background-color: #f1f5f9 !important;
 }
 
 .doctor-card:hover {
-    background-color: #d9f1ff;
+    background-color: #d9f1ff !important;
     transform: translateY(-5px);
 }
 
-/* Swiper Container and Slides */
+
 .swiper-container {
     width: 100%;
     padding: 1rem 0;
@@ -262,7 +262,6 @@ ul {
 
 .swiper-wrapper {
     display: flex;
-    gap: 1rem;
 }
 
 .swiper-slide {
@@ -277,51 +276,68 @@ ul {
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .swiper-slide {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
 @media (max-width: 768px) {
     .swiper-slide {
-        width: 90%;
+        width: 90% !important;
         padding: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .swiper-slide {
-        width: 95%;
+        width: 95% !important;
         padding: 0.25rem;
     }
 }
 
-/* Swiper Buttons */
+
+.swiper {
+    padding-bottom: 40px !important;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
     color: #0284c7;
     background: rgba(255, 255, 255, 0.9);
-    padding: 0.5rem;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
+    top: 412px;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background: #0284c7;
+    background: #ffffff;
     color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px !important;
 }
 
 .swiper-pagination-bullet {
     background: #0284c7;
     opacity: 0.8;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1;
     transform: scale(1.2);
 }
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0 !important;
+}
+
 
 /* WORLDWIDE SECTION CSS */
 .stats-bg {
@@ -330,7 +346,6 @@ ul {
     overflow: hidden;
 }
 
-/* Cross pattern */
 .cross-pattern {
     position: absolute;
     left: 5%;
@@ -356,10 +371,9 @@ ul {
     transform: rotate(45deg);
 }
 
-/* Circle pattern */
 .circle-pattern {
     position: absolute;
-    right: 5%;
+    right: 15%;
     bottom: 10%;
     width: 80px;
     height: 80px;
@@ -375,11 +389,167 @@ ul {
     border-radius: 50%;
 }
 
-/* Grid line patterns */
 .grid-lines {
     position: absolute;
     inset: 0;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 100px 100px;
+}
+
+/* FEEDBACK CSS  */
+.testimonials-slider {
+    padding: 20px 60px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px !important;
+    height: 50px !important;
+    background: #ffffff;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #0369a1;
+    transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.swiper-slide .bg-white {
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide .bg-white:hover {
+    transform: translateY(-5px);
+}
+
+.text-yellow-400 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* FAQ CSS  */
+
+.accordion {
+    border: 1px solid #e2e8f0;
+}
+
+.toggle-button {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #f0f9ff;
+}
+
+.arrow {
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.accordion.open .content {
+    visibility: visible;
+    max-height: 300px;
+}
+
+.accordion.open .arrow {
+    transform: rotate(0deg);
+}
+
+.content {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, visibility 0.3s ease;
+}
+
+/* BLOG CSS */
+.blog-slider {
+    padding: 20px 60px;
+}
+
+.swiper-button-next-doc,
+.swiper-button-prev-doc {
+    width: 50px !important;
+    height: 50px !important;
+    background: #0284c7;
+    border-radius: 50%;
+    color: white !important;
+    transition: all 0.3s ease;
+    top: 520px !important;
+}
+
+.swiper-button-next-doc:hover,
+.swiper-button-prev-doc:hover {
+    background: #0369a1;
+    transform: scale(1.1);
+}
+
+.swiper-button-next-doc::after,
+.swiper-button-prev-doc::after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER CSS  */
+/* Custom hover effects */
+.group:hover .group-hover\:translate-x-1 {
+    transform: translateX(0.25rem);
+}
+
+/* Smooth transitions */
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Responsive container */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* Ensure footer is relative for absolute positioning of medical cross */
+footer {
+    position: relative;
+    overflow: hidden;
 }

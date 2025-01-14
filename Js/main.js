@@ -1,68 +1,49 @@
- // Mobile menu toggle
- const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
 
 // Toggle the mobile menu
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+mobileMenuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
 });
 
 // Close mobile menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
-        mobileMenu.classList.remove('active');
-    }
+document.addEventListener("click", (e) => {
+  if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+    mobileMenu.classList.remove("active");
+  }
 });
 
 // Get current page URL path
 const currentPath = window.location.pathname;
 
 // Add active class to current page link
-document.querySelectorAll('.nav-link').forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-        link.classList.add('active');
-    }
+document.querySelectorAll(".nav-link").forEach((link) => {
+  if (link.getAttribute("href") === currentPath) {
+    link.classList.add("active");
+  }
 });
-
 
 //  SERVICE SECTION SLIDER
 
-// OUR TEAM SLIDER 
+// OUR TEAM SLIDER
 
+// FAQ SECTION
 document.addEventListener("DOMContentLoaded", () => {
-    const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        slidesPerView: 1,
-        spaceBetween: 10,
-        breakpoints: {
-            320:{
-                slidesPerView: 1,
-                spaceBetween: 50,
-            },
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+  document.querySelectorAll(".accordion").forEach((elm) => {
+    const button = elm.querySelector(".toggle-button");
+    const content = elm.querySelector(".content");
+    const arrowIcon = elm.querySelector(".arrow");
+
+    button.addEventListener("click", () => {
+      const isHidden = content.classList.toggle("invisible");
+      content.style.maxHeight = isHidden
+        ? "0px"
+        : `${content.scrollHeight + 100}px`;
+      content.classList.toggle("pb-5", !isHidden);
+      button.classList.toggle("font-semibold");
+      arrowIcon.classList.toggle("-rotate-180", !isHidden);
+      arrowIcon.classList.toggle("-rotate-90", isHidden);
     });
+  });
 });
