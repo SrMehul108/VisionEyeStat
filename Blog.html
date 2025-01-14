@@ -32,12 +32,12 @@
         href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet" />
 
-    <title>Document</title>
+    <title>Blogs</title>
 </head>
 
 <body>
-    <!-- BEGINING OF HEADER  -->
-    <header class="border-b w-100 sticky top-0 bg-white z-50">
+       <!-- BEGINING OF HEADER  -->
+       <header class="border-b w-100 sticky top-0 bg-white z-50">
         <div class="container mx-auto px-4 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="./index.html" class="flex items-center space-x-2">
@@ -50,7 +50,7 @@
                     <li><a href="./index.html" class="nav-link  text-sm font-medium">Home</a></li>
                     <li><a href="./about.html" class="nav-link text-sm font-medium">About Us</a></li>
                     <li class="dropdown relative">
-                        <a href="#" class="nav-link text-sm font-medium flex items-center p-0">
+                        <a href="./Service.html" class="nav-link text-sm font-medium flex items-center  p-0">
                             Services
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -72,8 +72,8 @@
             </nav>
 
             <!-- Book Appointment Button -->
-            <a href="/appointment"
-                class="bg-blue-500 hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
+            <a href="./bookAppointment.html"
+                class=" bg-[#017CC7] hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
                 Book Appointment
             </a>
 
@@ -92,12 +92,11 @@
             <div class="px-4 py-2 space-y-1">
                 <a href="./index.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Home</a>
                 <a href="./about.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">About Us</a>
-                <a href="/services" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
+                <a href="./Service.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
                 <a href="./Blog.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Blogs</a>
-                <a href="./contactUs.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact
-                    Us</a>
-                <a href="/appointment"
-                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                <a href="./contactUs.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact Us</a>
+                <a href="./bookAppointment.html"
+                    class=" bg-[#017CC7] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
                     Book Appointment
                 </a>
             </div>
@@ -106,22 +105,33 @@
     <!-- END OF HEADER  -->
 
     <!-- BEGINING OF HERO-SECTION  -->
-    <section>
-        <div class="diagonal-section background-pattern min-h-[340px] bg-gray-50 relative">
-            <div class="container mx-auto px-4 py-16 relative z-10">
-                <div class="flex flex-col items-center justify-center space-y-4">
-                    <span class="bg-[#0088CC] text-white px-6 py-2 rounded-full text-sm font-semibold">
-                        Our Blogs
-                    </span>
-                    <div class="relative">
-                        <span class="text-[#0088CC] absolute -left-8 -top-4 text-4xl font-bold">+</span>
-                        <h1 class="text-6xl font-bold text-gray-900">Blog</h1>
-                        <span class="text-[#0088CC] absolute -right-8 -bottom-4 text-4xl font-bold">+</span>
+    <div class="min-h-[300px] bg-pattern relative ">
+        <div class="bgpng z-10  opacity-0.5">
+            <div class="container mx-auto px-4 py-16 md:py-24">
+                <div class="max-w-4xl mx-auto text-center">
+                    <!-- Label -->
+                    <div class="w-full  mb-4   flex justify-center items-center text-white text-lg">
+                        <div class="text-sm text-white font-medium bg-[#017CC7]  px-4 py-1 rounded-full">
+                            Our Blogs</div>
+                    </div>
+
+                    <!-- Heading Container -->
+                    <div class="relative inline-flex items-center justify-center">
+                        <!-- Left Plus -->
+                        <span class="absolute left-7 -top-2 text-blue-500 text-3xl font-semibold">+</span>
+
+                        <!-- Main Heading -->
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 px-12">
+                           Blogs
+                        </h1>
+
+                        <!-- Right Plus -->
+                        <span class="absolute right-6 -bottom-2 text-blue-500 text-3xl font-semibold">+</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- END OF HERO-SECTION  -->
 
     <!-- BEGINING OF BLOG-SECTION  -->
@@ -152,7 +162,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -189,7 +199,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -226,7 +236,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -263,7 +273,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -300,7 +310,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -337,7 +347,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -374,7 +384,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -411,7 +421,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
@@ -448,7 +458,7 @@
                             <p class="text-gray-600 mb-4 text-sm">Introduction: Are you tired of struggling with cloudy
                                 vision caused by cataracts? Cataracts can perform everyday tasks like reading, driving,
                                 treatments that can restore your [...]</p>
-                            <a href="#"
+                            <a href="./SingleBlog.html"
                                 class="inline-flex items-center text-black font-bold underline decoration-solid hover:text-blue-700">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"

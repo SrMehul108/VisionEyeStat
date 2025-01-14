@@ -67,7 +67,9 @@ ul {
 }
 
 /* about page css */
-
+.bgpng {
+        background-image: url('/Image/bgpng.png');
+    }
 .Background {
         background-image: url('/Image/bgdoctor.png');
         background-size: cover;
