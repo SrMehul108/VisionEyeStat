@@ -27,6 +27,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 //  SERVICE SECTION SLIDER
 
+// OUR TEAM SLIDER 
+
 document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper('.swiper-container', {
         loop: true,
